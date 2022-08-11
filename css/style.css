@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navBar {
+    background-color: #E59500; 
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px ;
+    
+}
+
+.imageLogo {
+display: flex;
+flex-direction: row;
+justify-self: flex-start;
+
+}
+
+.productImg {
+    width: 100%;
+    height: 350px;
+}
+
+
+.imageProduct {
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    
+    
+}
+
+.imagePresentation {
+    max-width: 1fr;
+    height: auto;
+    margin: 0 0 20px 0;
+}
+
+.sectionTitle {
+    font-weight: bolder;
+    font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #CA3C25;
+    color: wheat;
+    height: 50px;
+    align-content: center;
+    width: 30%;
+    justify-self: center;
+}
+
+.sectionWho {
+    padding: 30px;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #E59500;
+    align-content: center;
+    margin: 0 0 20px 0;
+}
+.presentationText {
+    font-size: 15px;
+    width: 60%;
+    font-weight: 400;
+    color: wheat;
+    margin: 10px;
+
+}
+.sectionProducts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 0 20px 0;
+}
+.productList {
+    display: flexbox;
+    flex-flow: column wrap;
+    background-color: #E59500;
+}
+
+.sectionLocation {
+    display: flexbox;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    background-color: #E59500;
+    padding: 20px;
+    margin: 0 0 20px 0;
+
+}
+.contactList {
+    display: block;
+    align-items: center;
+    justify-items: center;
+    /* background-color: blue; */
+    padding: 50px;
+    margin: 10px;
+}
+.socialList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 100px;
+}
+
+.sectionFooter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.presentationText {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #CA3C25;
+}
+
+.videoPresentation {
+    display: flexbox;
+    align-self: center;
+
+    justify-self: center;
+}
+
+.productTitle {
+    display: flex;
+    justify-content: center;
+}

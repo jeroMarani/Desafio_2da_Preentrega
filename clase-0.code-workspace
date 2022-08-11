@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "clase-0",
+			"path": "..\\clase-0"
+		},
+		{
+			"name": "Clase_2",
+			"path": "..\\Clase_2"
+		},
+		{
+			"name": "1er Desafio",
+			"path": "..\\1er Desafio"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "1er Desafio"
+	}
+}
