@@ -143,3 +143,12 @@ justify-self: flex-start;
     display: flex;
     justify-content: center;
 }
+
+/* Media query de Index */
+@media screen and (min-width:480px) {
+    
+}
+
+@media screen and (min-width:768px) {
+    
+}
