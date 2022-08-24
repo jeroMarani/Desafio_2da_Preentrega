@@ -5,49 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calentitos</title>
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Typografías -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <!-- Custom stlyes -->
     <link rel="stylesheet" href="./css/style.css" />
+   
   </head>
   <body>
     <!-- Barra de Navegación -->
     <header>
-      <nav class="navBar">
+      <nav class="nav navBar" >
         <div class="imageLogo">
           <a href="./index.html"
             ><img height="50px" src="./img/logo.jpg" alt="logo"
           /></a>
-        </div>
-        <div>
-          <a href="./Quienes_somos.html">¿Quienes somos?</a>
-          <a href="./Productos.html">Productos</a>
-          <a href="./Ubicación.html">Ubicación</a>
-          <a href="./Contactos.html">Contactos</a>
-        </div>
+        </div class="navText">
+        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+        <a class="nav-link" href="./Quienes_somos.html">¿Quienes somos?</a>
+        <a class="nav-link" href="./Productos.html">Productos</a>
+        <a class="nav-link" href="./Contactos.html">Contactos</a>
       </nav>
     </header>
 
     <main>
       <!-- Imagen de presentación -->
-      <div class="imagePresentation">
-        <img src="./img/imagen_presentación.jpg" width="100%" />
+      <div class="text-center imagePresentation">
+        <img src="./img/imagen_presentación.jpg" class="img-fluid" alt="Pan casero cortado en tabla"/>
       </div>
 
       <!-- ¿Quienes somos? -->
       <section>
         <h2 class="sectionTitle">¿Quienes somos?</h2>
-        <section class="sectionWho">
-          <div><img src="./img/imagen_bienvenidos.jpg" /></div>
-          <p class="presentationText">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-            recusandae! Consequuntur voluptas molestias saepe possimus
-            aspernatur quod ipsum sequi beatae at. Sunt suscipit neque
-            laboriosam architecto blanditiis iste ipsam accusamus!
-          </p>
+        <section class="conteiner sectionWho">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col -6"> 
+              <p class="presentationText">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              recusandae! Consequuntur voluptas molestias saepe possimus
+              aspernatur quod ipsum sequi beatae at. Sunt suscipit neque
+              laboriosam architecto blanditiis iste ipsam accusamus!
+            </p></div>
+            <div class="col"></div>
+          </div>
+          </div>
+          
         </section>
       </section>
 
@@ -179,5 +188,8 @@
         <li><a href="">Contactos</a></li>
       </ul>
     </footer>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
