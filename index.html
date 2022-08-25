@@ -61,59 +61,66 @@
       </section>
 
       <!-- Productos disponibles -->
-      <h2 class="sectionTitle">Productos</h2>
-      <section class="sectionProducts">
+      <h2 class="sectionTitle ">Productos</h2>
         <!-- Secciones de tipos de productos -->
-        <section class="sectionProductsPanes">
-          <div class="imageProduct">
-            <img class="productImg" src="./img/imagen_productos_panes.jpg" />
+
+      <div class="row row-cols-1 row-cols-md-4 g-4 sectionProducts">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/imagen_productos_panes.jpg" class="productImg card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title productTitle text-center">Panes</h5>
+              <ul class="productList text-center">
+                <li>Pan de campo</li>
+                <li>Baggette</li>
+                <li>Felipe</li>
+                <li>Pan de papa</li>
+              </ul>
+            </div>
           </div>
-          <h3 class="productTitle">Panes</h3>
-          <ul class="productList">
-            <li>Pan de campo</li>
-            <li>Baggette</li>
-            <li>Felipe</li>
-            <li>Pan de papa</li>
-          </ul>
-        </section>
-        <section class="sectionProductsPasteleria">
-          <div class="imageProduct">
-            <img
-              class="productImg"
-              src="./img/imagen_productos_pasteleria.jpg"
-            />
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/imagen_productos_pasteleria.jpg" class="card-img-top productImg"  alt="...">
+            <div class="card-body">
+              <h5 class="productTitle card-title text-center">Patelería</h5>
+              <ul class="productList text-center">
+                <li>Brownies</li>
+                <li>Biscochuelo</li>
+                <li>Lemonpie</li>
+                <li>Alfajores de maicena</li>
+              </ul>
+            </div>
           </div>
-          <h3 class="productTitle">Patelería</h3>
-          <ul class="productList">
-            <li>Brownies</li>
-            <li>Biscochuelo</li>
-            <li>Lemonpie</li>
-            <li>Alfajores de maicena</li>
-          </ul>
-        </section>
-        <section class="sectionProductsGrasa">
-          <div class="imageProduct">
-            <img class="productImg" src="./img/imagen_productos_grasa.jpg" />
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/imagen_productos_grasa.jpg"class="card-img-top productImg" alt="...">
+            <div class="card-body">
+              <h5 class="card-title productTitle text-center">Con grasa</h5>
+              <ul class="productList text-center">
+                <li>Facturas de manteca</li>
+                <li>Criollos comunes</li>
+                <li>Criollos de hojaldre</li>
+                <li>Chipás</li>
+              </ul>
+            </div>
           </div>
-          <h3 class="productTitle">Con grasa</h3>
-          <ul class="productList">
-            <li>Facturas de manteca</li>
-            <li>Criollos comunes</li>
-            <li>Criollos de hojaldre</li>
-            <li>Chipás</li>
-          </ul>
-        </section>
-        <section class="sectionProductSalado">
-          <div class="imageProduct">
-            <img class="productImg" src="./img/imagen_productos_salado.webp" />
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./img/imagen_productos_salado.webp" class=" productImg card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title productTitle text-center">Salado</h5>
+              <ul class="productList text-center">
+                <li>Sandwich de fiambre</li>
+                <li>Prepizzas</li>
+                <li>Masa de tartas</li>
+              </ul>
+            </div>
           </div>
-          <h3 class="productTitle">Salado</h3>
-          <ul class="productList">
-            <li>Sandwuich de fiambre</li>
-            <li>Prepizzas</li>
-            <li>Masa de tartas</li>
-          </ul>
-        </section>
+        </div>
+      </div>
       </section>
       <!-- Ubicación de negocio -->
       <h2 class="sectionTitle">Ubicación</h2>
@@ -131,17 +138,31 @@
           ></iframe>
         </div>
       </section>
-      <!-- Contactos con el negocio -->
-      <h2 class="sectionTitle">Contactos</h2>
-      <section>
-        <!-- Lista de números  -->
+    </main>
 
-        <ul class="contactList">
-          <li>+54 351 3695113</li>
-          <li>+54 351 3695113</li>
-          <li>+54 351 3695113</li>
-          <li>+54 351 3695113</li>
-        </ul>
+    <!-- Footer -->
+    <footer>
+    <conteiner class="conteinerFooter">
+        <col>
+        <row>
+      <ul class="sectionFooter">
+        <li>@Copyright</li>
+        <li><a href="">¿Quienes somos?</a></li>
+        <li><a href="">Productos</a></li>
+        <li><a href="">Ubicación</a></li>
+        <li><a href="">Contactos</a></li>
+      </ul>
+    </row>
+    <row>
+       <!-- Lista de números  -->
+       <ul class="contactList">
+        <li>+54 351 3695113</li>
+        <li>+54 351 3695113</li>
+        <li>+54 351 3695113</li>
+        <li>+54 351 3695113</li>
+      </ul>
+    </row>
+    <row>
         <!-- Links a redes -->
         <ul class="socialList">
           <!-- Twitter -->
@@ -150,8 +171,8 @@
               <img
                 src="./img/imagen_contactos_twitter.jpg"
                 alt=""
-                height="60px"
-                width="60px"
+                height="30px"
+                width="30px"
             /></a>
           </li>
           <!-- Facebook -->
@@ -160,8 +181,8 @@
               <img
                 src="./img/imagen_contactos_facebook.jpg"
                 alt=""
-                height="60px"
-                width="60px"
+                height="30px"
+                width="30px"
             /></a>
           </li>
           <!-- Gmail -->
@@ -170,25 +191,16 @@
               <img
                 src="./img/imagen_contactos_gmail.jpg"
                 alt=""
-                height="60px"
-                width="60px"
+                height="30px"
+                width="30px"
             /></a>
           </li>
         </ul>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <ul class="sectionFooter">
-        <li>@Copyright</li>
-        <li><a href="">¿Quienes somos?</a></li>
-        <li><a href="">Productos</a></li>
-        <li><a href="">Ubicación</a></li>
-        <li><a href="">Contactos</a></li>
-      </ul>
+    </row>
+    <col>
+  </conteiner>
     </footer>
-
+  
 
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>

@@ -4,16 +4,19 @@
   box-sizing: border-box;
 }
 li {
-  list-style: none
-  }
-  
+  list-style: none;
+}
+a {
+  color: black;
+  font-variant: normal;
+}
 
 body {
   font-family: "Roboto", sans-serif;
 }
 /* Barra de navegación */
 .navBar {
-  background-color: #ffc176;
+  background-color: #ffe9b3;
   width: 100%;
   height: 50px;
   display: flex;
@@ -23,12 +26,13 @@ body {
   justify-content: space-between;
   font-size: 20px;
   font-weight: bold;
-  padding: 5px;
-  margin: 5px;
+  padding: 0px 5px 5px 5px;
+  margin: 0px 0px 0px 0px;
   position: fixed;
+  z-index: 1;
 }
 .nav-link {
- color: #ffe9b3; 
+  color: #ff7d76;
 }
 
 /* Logo de navegación */
@@ -36,6 +40,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-self: start;
+  height: 100%;
+  width: auto;
 }
 
 /* Style de index */
@@ -45,7 +51,7 @@ body {
   font-size: 1.2em;
   width: 40%;
   font-weight: 400;
-  color: #d7dace;
+  color: #ff7d76;
   margin: 10px;
   text-align: center;
 }
@@ -54,6 +60,7 @@ body {
 .productImg {
   width: 100%;
   height: 350px;
+  transition: 0.3s;
 }
 
 /* Contenedor Imagen de tipos de producto */
@@ -61,7 +68,6 @@ body {
   display: flex;
   align-content: center;
   justify-content: center;
-
 }
 
 /* Texto de título de secciones*/
@@ -72,11 +78,13 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   background-color: #ffe9b3;
-  color: #ffc176;
+  color: #cf545b;
   height: 50px;
   align-content: center;
   width: 30%;
   justify-self: center;
+  margin: 5px;
+  padding: 5px;
 }
 
 /* ¿Sección quienes somos? */
@@ -89,20 +97,14 @@ body {
   margin: 0 0 20px 0;
 }
 
-/* Grid contenedor de sección de productos */
-.sectionProducts {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin: 0 0 20px 0;
-}
-
 /* Contenedor  de lista de productos */
-.productList {
+.productList,
+.productTitle {
   display: flex;
   flex-flow: column wrap;
   background-color: #ffc176;
   transition: 1s;
+  color: #ff7d76;
 }
 
 /* Bloque contenedor de sección de Ubicación */
@@ -118,12 +120,12 @@ body {
 
 /* Bloque contenedor de lista de contactos */
 .contactList {
-  display: block;
+  display: flex;
+  flex-flow: row wrap;
   align-items: center;
-  justify-items: center;
-  /* background-color: blue; */
-  padding: 50px;
-  margin: 10px;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* Bloque contenedor de contactos sociales */
@@ -131,7 +133,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin: 100px;
+  margin: 0px;
 }
 
 /* Bloque contenerdor de Footer */
@@ -140,6 +142,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
+  background-color: #ffe9b3;
 }
 
 /* Bloque contenedor de texto de presentación */
@@ -147,14 +150,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  color: #ffe9b3;
+  color: #ff7d76;
 }
 
 /* Bloque contenedor de video de presentación */
 .videoPresentation {
   display: flexbox;
   align-self: center;
-
   justify-self: center;
 }
 
@@ -165,22 +167,20 @@ body {
 }
 
 /* Primer intento de animasión para listas de productos */
-.productList:hover {
-transform: scale(1,2);
-color: red;
-background-color: #d7dace;
+.productImg:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.sectionProducts .card {
+  background-color: #ffc176;
+}
+
+.conteinerFooter {
+  background-color: #ffe9b3;
+  color: #cf545b;
 }
 
 /* Media query de Index */
-
-@media screen and (max-width: 768px) {
-  .sectionProducts {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 0 0 20px 0;
-  }
-}
 
 @media screen and (max-width: 480px) {
   .sectionProducts {
