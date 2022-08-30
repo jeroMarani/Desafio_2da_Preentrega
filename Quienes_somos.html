@@ -18,23 +18,23 @@
   <body>
     <!-- Barra de Navegación -->
     <header>
-      <nav class="navBar">
+      <nav class="nav navBar">
         <div class="imageLogo">
           <a href="./index.html"
             ><img height="50px" src="./img/logo.jpg" alt="logo"
           /></a>
         </div>
-        <div>
-          <a href="./Quienes_somos.html">¿Quienes somos?</a>
-          <a href="./Productos.html">Productos</a>
-          <a href="./Ubicación.html">Ubicación</a>
-          <a href="./Contactos.html">Contactos</a>
+        <div class="navText">
+          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          <a class="nav-link" href="./Quienes_somos.html">¿Quienes somos?</a>
+          <a class="nav-link" href="./Productos.html">Productos</a>
+          <a class="nav-link" href="./Contactos.html">Contactos</a>
         </div>
       </nav>
     </header>
     <!-- Video de presentación -->
     <main>
-      <div class="videoPresentation">
+      <div class="videoPresentation text-center">
         <!-- Por no tener video de verdad, se usó un video relacionado -->
         <iframe
           width="560"
@@ -47,30 +47,38 @@
         ></iframe>
       </div>
       <!-- Texto de información de la Panadería -->
-      <div>
-        <p class="presentationText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-          nobis? Atque ullam doloremque debitis nostrum et voluptatem odio id
-          eligendi, provident obcaecati magnam quibusdam consectetur impedit
-          eaque. Architecto, saepe ipsum? Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Adipisci labore quaerat cumque ipsa
-          itaque pariatur, ipsam laboriosam ratione distinctio corporis
-          dignissimos atque veritatis dolorem dicta provident aperiam expedita
-          tempora officia? Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Rem blanditiis maiores esse. Inventore molestias amet beatae
-          saepe dolore harum accusamus labore minima, molestiae odit at,
-          corrupti perspiciatis deserunt! Mollitia, tenetur! Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Quis alias, voluptatibus optio
-          iusto numquam quasi neque quibusdam nam reprehenderit, molestiae
-          blanditiis id voluptas minus quos sequi saepe quo debitis voluptate.
-        </p>
-      </div>
-      <div><img src="./img/imagen_bienvenidos.jpg" /></div>
+      <section class="conteiner sectionWho">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-6">
+            <p class="presentationText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+              nobis? Atque ullam doloremque debitis nostrum et voluptatem odio
+              id eligendi, provident obcaecati magnam quibusdam consectetur
+              impedit eaque. Architecto, saepe ipsum? Lorem, ipsum dolor sit
+              amet consectetur adipisicing elit. Adipisci labore quaerat cumque
+              ipsa itaque pariatur, ipsam laboriosam ratione distinctio corporis
+              dignissimos atque veritatis dolorem dicta provident aperiam
+              expedita tempora officia? Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Rem blanditiis maiores esse. Inventore molestias
+              amet beatae saepe dolore harum accusamus labore minima, molestiae
+              odit at, corrupti perspiciatis deserunt! Mollitia, tenetur! Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Quis alias,
+              voluptatibus optio iusto numquam quasi neque quibusdam nam
+              reprehenderit, molestiae blanditiis id voluptas minus quos sequi
+              saepe quo debitis voluptate.
+            </p>
+          </div>
+          <div class="col"></div>
+        </div>
+        <div class="text-center">
+          <img src="./img/imagen_bienvenidos.jpg" class="img-fluid" />
+        </div>
+      </section>
     </main>
     <!-- Footer -->
     <footer>
       <conteiner class="conteinerFooter">
-        <col />
         <row>
           <ul class="sectionFooter">
             <li>@Copyright</li>
@@ -80,20 +88,17 @@
             <li><a href="">Contactos</a></li>
           </ul>
         </row>
-        <row>
+        <div class="row">
           <!-- Lista de números  -->
-          <ul class="contactList">
-            <li>+54 351 3695113</li>
+          <ul class="contactList col-3">
             <li>+54 351 3695113</li>
             <li>+54 351 3695113</li>
             <li>+54 351 3695113</li>
           </ul>
-        </row>
-        <row>
           <!-- Links a redes -->
-          <ul class="socialList">
+          <ul class="socialList col">
             <!-- Twitter -->
-            <li>
+            <li class="col-3">
               <a href="">
                 <img
                   src="./img/imagen_contactos_twitter.jpg"
@@ -103,7 +108,7 @@
               /></a>
             </li>
             <!-- Facebook -->
-            <li>
+            <li class="col-3">
               <a href="">
                 <img
                   src="./img/imagen_contactos_facebook.jpg"
@@ -113,7 +118,7 @@
               /></a>
             </li>
             <!-- Gmail -->
-            <li>
+            <li class="col-3">
               <a href="">
                 <img
                   src="./img/imagen_contactos_gmail.jpg"
@@ -123,8 +128,7 @@
               /></a>
             </li>
           </ul>
-        </row>
-        <col />
+        </div>
       </conteiner>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>

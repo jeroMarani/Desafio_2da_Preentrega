@@ -18,139 +18,124 @@
   <body>
     <!-- Barra de Navegación -->
     <header>
-      <nav class="navBar">
+      <nav class="nav navBar">
         <div class="imageLogo">
           <a href="./index.html"
             ><img height="50px" src="./img/logo.jpg" alt="logo"
           /></a>
         </div>
-        <div>
-          <a href="./Quienes_somos.html">¿Quienes somos?</a>
-          <a href="./Productos.html">Productos</a>
-          <a href="./Ubicación.html">Ubicación</a>
-          <a href="./Contactos.html">Contactos</a>
+        <div class="navText">
+          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          <a class="nav-link" href="./Quienes_somos.html">¿Quienes somos?</a>
+          <a class="nav-link" href="./Productos.html">Productos</a>
+          <a class="nav-link" href="./Contactos.html">Contactos</a>
         </div>
       </nav>
     </header>
     <main>
       <!-- Contactos con el negocio -->
       <h2 class="sectionTitle">Contactos</h2>
-      <section>
-        <!-- Lista de números  -->
-
-        <ul class="contactList">
-          <li>+54 351 3695113</li>
-          <li>+54 351 3695113</li>
-          <li>+54 351 3695113</li>
-          <li>+54 351 3695113</li>
-        </ul>
-        <!-- Links a redes -->
-        <ul class="socialList">
-          <!-- Twitter -->
-          <li>
-            <a href="">
-              <img
-                src="./img/imagen_contactos_twitter.jpg"
-                alt=""
-                height="60px"
-                width="60px"
-            /></a>
-          </li>
-          <!-- Facebook -->
-          <li>
-            <a href="">
-              <img
-                src="./img/imagen_contactos_facebook.jpg"
-                alt=""
-                height="60px"
-                width="60px"
-            /></a>
-          </li>
-          <!-- Gmail -->
-          <li>
-            <a href="">
-              <img
-                src="./img/imagen_contactos_gmail.jpg"
-                alt=""
-                height="60px"
-                width="60px"
-            /></a>
-          </li>
-        </ul>
-
+      <conteiner class="conteinerContact">
         <!-- Textfields de contacto -->
-        <!-- No se sabe cómo hacer textfields asi que los figures van a ser usados de placeholders -->
-        <section class="sectionMeseage">
-          <span class="textfieldName"> Nombre y apellido </span>
-          <figure class="textField"></figure>
-          <span class="textfieldName"> Correo electrónico </span>
-          <figure class="textField"></figure>
-          <span class="textfieldName"> Telefono </span>
-          <figure class="textField"></figure>
-          <span class="textfieldName"> Asunto </span>
-          <figure class="textField"></figure>
-        </section>
-        <!-- Footer -->
-        <footer>
-          <conteiner class="conteinerFooter">
-            <col />
-            <row>
-              <ul class="sectionFooter">
-                <li>@Copyright</li>
-                <li><a href="">¿Quienes somos?</a></li>
-                <li><a href="">Productos</a></li>
-                <li><a href="">Ubicación</a></li>
-                <li><a href="">Contactos</a></li>
-              </ul>
-            </row>
-            <row>
-              <!-- Lista de números  -->
-              <ul class="contactList">
-                <li>+54 351 3695113</li>
-                <li>+54 351 3695113</li>
-                <li>+54 351 3695113</li>
-                <li>+54 351 3695113</li>
-              </ul>
-            </row>
-            <row>
-              <!-- Links a redes -->
-              <ul class="socialList">
-                <!-- Twitter -->
-                <li>
-                  <a href="">
-                    <img
-                      src="./img/imagen_contactos_twitter.jpg"
-                      alt=""
-                      height="30px"
-                      width="30px"
-                  /></a>
-                </li>
-                <!-- Facebook -->
-                <li>
-                  <a href="">
-                    <img
-                      src="./img/imagen_contactos_facebook.jpg"
-                      alt=""
-                      height="30px"
-                      width="30px"
-                  /></a>
-                </li>
-                <!-- Gmail -->
-                <li>
-                  <a href="">
-                    <img
-                      src="./img/imagen_contactos_gmail.jpg"
-                      alt=""
-                      height="30px"
-                      width="30px"
-                  /></a>
-                </li>
-              </ul>
-            </row>
-            <col />
-          </conteiner>
-        </footer>
-      </section>
+        <div class="mb-3 row-cols-md-1">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Nombre y Apellido</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Juan Perez"
+          />
+        </div>
+        <div class="mb-3 row-cols-md-1">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Correo electrónico</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3 row-cols-md-1">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Telefono</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="35125941112"
+          />
+        </div>
+        <div class="mb-3 row-cols-md-1">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Asunto a comunicar con empresa</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+      </conteiner>
+      <!-- Footer -->
+      <footer>
+        <conteiner class="conteinerFooter">
+          <row>
+            <ul class="sectionFooter">
+              <li>@Copyright</li>
+              <li><a href="">¿Quienes somos?</a></li>
+              <li><a href="">Productos</a></li>
+              <li><a href="">Ubicación</a></li>
+              <li><a href="">Contactos</a></li>
+            </ul>
+          </row>
+          <div class="row">
+            <!-- Lista de números  -->
+            <ul class="contactList col-3">
+              <li>+54 351 3695113</li>
+              <li>+54 351 3695113</li>
+              <li>+54 351 3695113</li>
+            </ul>
+            <!-- Links a redes -->
+            <ul class="socialList col">
+              <!-- Twitter -->
+              <li class="col-3">
+                <a href="">
+                  <img
+                    src="./img/imagen_contactos_twitter.jpg"
+                    alt=""
+                    height="30px"
+                    width="30px"
+                /></a>
+              </li>
+              <!-- Facebook -->
+              <li class="col-3">
+                <a href="">
+                  <img
+                    src="./img/imagen_contactos_facebook.jpg"
+                    alt=""
+                    height="30px"
+                    width="30px"
+                /></a>
+              </li>
+              <!-- Gmail -->
+              <li class="col-3">
+                <a href="">
+                  <img
+                    src="./img/imagen_contactos_gmail.jpg"
+                    alt=""
+                    height="30px"
+                    width="30px"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </conteiner>
+      </footer>
     </main>
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>

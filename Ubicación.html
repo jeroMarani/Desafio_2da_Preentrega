@@ -18,17 +18,17 @@
   <body>
     <!-- Barra de Navegación -->
     <header>
-      <nav class="navBar">
+      <nav class="nav navBar">
         <div class="imageLogo">
           <a href="./index.html"
             ><img height="50px" src="./img/logo.jpg" alt="logo"
           /></a>
         </div>
-        <div>
-          <a href="./Quienes_somos.html">¿Quienes somos?</a>
-          <a href="./Productos.html">Productos</a>
-          <a href="./Ubicación.html">Ubicación</a>
-          <a href="./Contactos.html">Contactos</a>
+        <div class="navText">
+          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          <a class="nav-link" href="./Quienes_somos.html">¿Quienes somos?</a>
+          <a class="nav-link" href="./Productos.html">Productos</a>
+          <a class="nav-link" href="./Contactos.html">Contactos</a>
         </div>
       </nav>
     </header>
@@ -54,7 +54,6 @@
     <!-- Footer -->
     <footer>
       <conteiner class="conteinerFooter">
-        <col />
         <row>
           <ul class="sectionFooter">
             <li>@Copyright</li>
@@ -64,20 +63,17 @@
             <li><a href="">Contactos</a></li>
           </ul>
         </row>
-        <row>
+        <div class="row">
           <!-- Lista de números  -->
-          <ul class="contactList">
-            <li>+54 351 3695113</li>
+          <ul class="contactList col-3">
             <li>+54 351 3695113</li>
             <li>+54 351 3695113</li>
             <li>+54 351 3695113</li>
           </ul>
-        </row>
-        <row>
           <!-- Links a redes -->
-          <ul class="socialList">
+          <ul class="socialList col">
             <!-- Twitter -->
-            <li>
+            <li class="col-3">
               <a href="">
                 <img
                   src="./img/imagen_contactos_twitter.jpg"
@@ -87,7 +83,7 @@
               /></a>
             </li>
             <!-- Facebook -->
-            <li>
+            <li class="col-3">
               <a href="">
                 <img
                   src="./img/imagen_contactos_facebook.jpg"
@@ -97,7 +93,7 @@
               /></a>
             </li>
             <!-- Gmail -->
-            <li>
+            <li class="col-3">
               <a href="">
                 <img
                   src="./img/imagen_contactos_gmail.jpg"
@@ -107,8 +103,7 @@
               /></a>
             </li>
           </ul>
-        </row>
-        <col />
+        </div>
       </conteiner>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>

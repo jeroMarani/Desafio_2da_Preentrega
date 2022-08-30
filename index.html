@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calentitos</title>
     <!-- Bootstrap Styles -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <!-- Typografías -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,28 +16,33 @@
     />
     <!-- Custom stlyes -->
     <link rel="stylesheet" href="./css/style.css" />
-   
   </head>
   <body>
     <!-- Barra de Navegación -->
     <header>
-      <nav class="nav navBar" >
+      <nav class="nav navBar">
         <div class="imageLogo">
           <a href="./index.html"
             ><img height="50px" src="./img/logo.jpg" alt="logo"
           /></a>
-        </div class="navText">
-        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-        <a class="nav-link" href="./Quienes_somos.html">¿Quienes somos?</a>
-        <a class="nav-link" href="./Productos.html">Productos</a>
-        <a class="nav-link" href="./Contactos.html">Contactos</a>
+        </div>
+        <div class="navText">
+          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          <a class="nav-link" href="./Quienes_somos.html">¿Quienes somos?</a>
+          <a class="nav-link" href="./Productos.html">Productos</a>
+          <a class="nav-link" href="./Contactos.html">Contactos</a>
+        </div>
       </nav>
     </header>
 
     <main>
       <!-- Imagen de presentación -->
       <div class="text-center imagePresentation">
-        <img src="./img/imagen_presentación.jpg" class="img-fluid" alt="Pan casero cortado en tabla"/>
+        <img
+          src="./img/imagen_presentación.jpg"
+          class="img-fluid"
+          alt="Pan casero cortado en tabla"
+        />
       </div>
 
       <!-- ¿Quienes somos? -->
@@ -46,28 +51,31 @@
         <section class="conteiner sectionWho">
           <div class="row">
             <div class="col"></div>
-            <div class="col -6"> 
+            <div class="col -6">
               <p class="presentationText">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-              recusandae! Consequuntur voluptas molestias saepe possimus
-              aspernatur quod ipsum sequi beatae at. Sunt suscipit neque
-              laboriosam architecto blanditiis iste ipsam accusamus!
-            </p></div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Numquam, recusandae! Consequuntur voluptas molestias saepe
+                possimus aspernatur quod ipsum sequi beatae at. Sunt suscipit
+                neque laboriosam architecto blanditiis iste ipsam accusamus!
+              </p>
+            </div>
             <div class="col"></div>
           </div>
-          </div>
-          
         </section>
       </section>
 
       <!-- Productos disponibles -->
-      <h2 class="sectionTitle ">Productos</h2>
-        <!-- Secciones de tipos de productos -->
+      <h2 class="sectionTitle">Productos</h2>
+      <!-- Secciones de tipos de productos -->
 
       <div class="row row-cols-1 row-cols-md-4 g-4 sectionProducts">
         <div class="col">
           <div class="card h-100">
-            <img src="./img/imagen_productos_panes.jpg" class="productImg card-img-top" alt="...">
+            <img
+              src="./img/imagen_productos_panes.jpg"
+              class="productImg card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title productTitle text-center">Panes</h5>
               <ul class="productList text-center">
@@ -81,7 +89,11 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="./img/imagen_productos_pasteleria.jpg" class="card-img-top productImg"  alt="...">
+            <img
+              src="./img/imagen_productos_pasteleria.jpg"
+              class="card-img-top productImg"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="productTitle card-title text-center">Patelería</h5>
               <ul class="productList text-center">
@@ -95,7 +107,11 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="./img/imagen_productos_grasa.jpg"class="card-img-top productImg" alt="...">
+            <img
+              src="./img/imagen_productos_grasa.jpg"
+              class="card-img-top productImg"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title productTitle text-center">Con grasa</h5>
               <ul class="productList text-center">
@@ -109,7 +125,11 @@
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="./img/imagen_productos_salado.webp" class=" productImg card-img-top" alt="...">
+            <img
+              src="./img/imagen_productos_salado.webp"
+              class="productImg card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title productTitle text-center">Salado</h5>
               <ul class="productList text-center">
@@ -121,7 +141,6 @@
           </div>
         </div>
       </div>
-      </section>
       <!-- Ubicación de negocio -->
       <h2 class="sectionTitle">Ubicación</h2>
       <section class="sectionLocation">
@@ -142,66 +161,59 @@
 
     <!-- Footer -->
     <footer>
-    <conteiner class="conteinerFooter">
-        <col>
+      <conteiner class="conteinerFooter">
         <row>
-      <ul class="sectionFooter">
-        <li>@Copyright</li>
-        <li><a href="">¿Quienes somos?</a></li>
-        <li><a href="">Productos</a></li>
-        <li><a href="">Ubicación</a></li>
-        <li><a href="">Contactos</a></li>
-      </ul>
-    </row>
-    <row>
-       <!-- Lista de números  -->
-       <ul class="contactList">
-        <li>+54 351 3695113</li>
-        <li>+54 351 3695113</li>
-        <li>+54 351 3695113</li>
-        <li>+54 351 3695113</li>
-      </ul>
-    </row>
-    <row>
-        <!-- Links a redes -->
-        <ul class="socialList">
-          <!-- Twitter -->
-          <li>
-            <a href="">
-              <img
-                src="./img/imagen_contactos_twitter.jpg"
-                alt=""
-                height="30px"
-                width="30px"
-            /></a>
-          </li>
-          <!-- Facebook -->
-          <li>
-            <a href="">
-              <img
-                src="./img/imagen_contactos_facebook.jpg"
-                alt=""
-                height="30px"
-                width="30px"
-            /></a>
-          </li>
-          <!-- Gmail -->
-          <li>
-            <a href="">
-              <img
-                src="./img/imagen_contactos_gmail.jpg"
-                alt=""
-                height="30px"
-                width="30px"
-            /></a>
-          </li>
-        </ul>
-    </row>
-    <col>
-  </conteiner>
+          <ul class="sectionFooter">
+            <li>@Copyright</li>
+            <li><a href="">¿Quienes somos?</a></li>
+            <li><a href="">Productos</a></li>
+            <li><a href="">Ubicación</a></li>
+            <li><a href="">Contactos</a></li>
+          </ul>
+        </row>
+        <div class="row">
+          <!-- Lista de números  -->
+          <ul class="contactList col-3">
+            <li>+54 351 3695113</li>
+            <li>+54 351 3695113</li>
+            <li>+54 351 3695113</li>
+          </ul>
+          <!-- Links a redes -->
+          <ul class="socialList col">
+            <!-- Twitter -->
+            <li class="col-3">
+              <a href="">
+                <img
+                  src="./img/imagen_contactos_twitter.jpg"
+                  alt=""
+                  height="30px"
+                  width="30px"
+              /></a>
+            </li>
+            <!-- Facebook -->
+            <li class="col-3">
+              <a href="">
+                <img
+                  src="./img/imagen_contactos_facebook.jpg"
+                  alt=""
+                  height="30px"
+                  width="30px"
+              /></a>
+            </li>
+            <!-- Gmail -->
+            <li class="col-3">
+              <a href="">
+                <img
+                  src="./img/imagen_contactos_gmail.jpg"
+                  alt=""
+                  height="30px"
+                  width="30px"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </conteiner>
     </footer>
-  
-
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -13,6 +13,7 @@ a {
 
 body {
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 /* Barra de navegación */
 .navBar {
@@ -32,7 +33,7 @@ body {
   z-index: 1;
 }
 .nav-link {
-  color: #ff7d76;
+  color: #930500;
 }
 
 /* Logo de navegación */
@@ -45,13 +46,16 @@ body {
 }
 
 /* Style de index */
-
+.imagePresentation {
+  width: 100%;
+  height: auto;
+}
 /* Texto de presentación de negocio */
 .presentationText {
   font-size: 1.2em;
   width: 40%;
   font-weight: 400;
-  color: #ff7d76;
+  color: #930500;
   margin: 10px;
   text-align: center;
 }
@@ -78,7 +82,7 @@ body {
   flex-flow: row wrap;
   justify-content: center;
   background-color: #ffe9b3;
-  color: #cf545b;
+  color: #930500;
   height: 50px;
   align-content: center;
   width: 30%;
@@ -104,7 +108,7 @@ body {
   flex-flow: column wrap;
   background-color: #ffc176;
   transition: 1s;
-  color: #ff7d76;
+  color: #930500;
 }
 
 /* Bloque contenedor de sección de Ubicación */
@@ -121,17 +125,21 @@ body {
 /* Bloque contenedor de lista de contactos */
 .contactList {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 0px;
-  margin: 0px;
+  padding: 1px 0px 0px 3px;
+  margin: 1px 0px 0px 3px;
+  height: fit-content;
+  width: auto;
+  font-size: small;
 }
 
 /* Bloque contenedor de contactos sociales */
 .socialList {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
   justify-content: space-around;
   margin: 0px;
 }
@@ -141,7 +149,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  width: 100%;
   background-color: #ffe9b3;
 }
 
@@ -150,14 +157,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  color: #ff7d76;
+  color: #930500;
 }
 
 /* Bloque contenedor de video de presentación */
 .videoPresentation {
   display: flexbox;
-  align-self: center;
-  justify-self: center;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  /* width: fit-content; */
 }
 
 /* Texto de título de lista de productos */
@@ -171,13 +180,35 @@ body {
   transform: scale(1.1, 1.1);
 }
 
+.sectionProducts {
+  padding: 5px;
+  margin: 5px;
+}
+
+.sectionProductsExclusive {
+  padding: 5px;
+  margin: 20px 5px 5px 5px;
+}
+
 .sectionProducts .card {
   background-color: #ffc176;
 }
 
 .conteinerFooter {
   background-color: #ffe9b3;
-  color: #cf545b;
+  color: #930500;
+}
+
+/* Estilo de Página Contactos */
+.conteinerContact {
+  display: flex;
+  background-color: #ffc176;
+  color: #930500;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px;
+  border: 1px;
 }
 
 /* Media query de Index */
