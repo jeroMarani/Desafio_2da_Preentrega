@@ -1,0 +1,56 @@
+$backgroundDark: #ffc176;
+$backgroundLight: #ffe9b3;
+$scriptColorSpecial: #930500;
+$scriptColorNormal: black;
+$scriptColorUsed: #930044;
+$font: (
+  font-family: "Roboto",
+  sans-serif,
+  width: 100%,
+);
+$widthTotal: width 100%;
+$fontSpecial: (
+  font-weight: bold,
+  font-size: 20px,
+);
+$displayFlexRow: (
+  display: flex,
+  flex-flow: row wrap,
+  justify-content: center,
+  align-items: center,
+);
+$displayFlexRowNav: flex, row wrap, space-between, center;
+$displayFlexColumn: (
+  display: flex,
+  flex-flow: column wrap,
+  justify-content: center,
+  align-items: center,
+);
+$styleBoxNormal: (
+  padding: 5px,
+  margin: 5px,
+);
+
+.body {
+  font-family: map-get($map: $font, $key: font-family);
+  width: map-get($map: $font, $key: width);
+}
+
+.navBar {
+  background-color: $backgroundLight;
+  display: $displayFlexRowNav;
+  flex-flow: $displayFlexRowNav;
+  justify-content: $displayFlexRowNav;
+  align-items: $displayFlexRowNav;
+  padding: $styleBoxNormal;
+  margin: $styleBoxNormal;
+  position: sticky;
+}
+
+.videoPresentation {
+  display: $displayFlexRow;
+  flex-flow: $displayFlexRow;
+  align-items: $displayFlexRow;
+  justify-content: $displayFlexRow;
+  height: auto;
+}
