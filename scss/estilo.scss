@@ -1,56 +1,308 @@
+// Variables de colores
 $backgroundDark: #ffc176;
 $backgroundLight: #ffe9b3;
 $scriptColorSpecial: #930500;
 $scriptColorNormal: black;
 $scriptColorUsed: #930044;
+
+// Breackpoints media queries
+
+
+// Variables fuentes
 $font: (
   font-family: "Roboto",
-  sans-serif,
-  width: 100%,
+  sans-serif width: 100%,
 );
-$widthTotal: width 100%;
+$fontSmaller: 0.6em;
+$fontSmall: 0.8em;
+$fontSpecialSmall: (
+  weight: bolder,
+  size: 0.5em,
+);
 $fontSpecial: (
-  font-weight: bold,
-  font-size: 20px,
+  weight: bolder,
+  size: 1em,
 );
+
+// Variables de tamaños
+$widthTotal: 100%;
+$styleBoxNormal: (
+  padding: 5px,
+  margin: 5px,
+);
+
+// Variables flex
 $displayFlexRow: (
   display: flex,
   flex-flow: row wrap,
   justify-content: center,
   align-items: center,
 );
-$displayFlexRowNav: flex, row wrap, space-between, center;
+$displayFlexRowNav: (
+  display: flex,
+  flex-flow: row wrap,
+  justify-content: space-between,
+  align-items: center,
+  width: 100vw,
+  height: auto,
+);
+
 $displayFlexColumn: (
   display: flex,
   flex-flow: column wrap,
   justify-content: center,
   align-items: center,
 );
-$styleBoxNormal: (
-  padding: 5px,
-  margin: 5px,
-);
 
+// Formatos generales
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  color: black;
+  font-variant: normal;
+}
 .body {
   font-family: map-get($map: $font, $key: font-family);
   width: map-get($map: $font, $key: width);
 }
 
+// Barra de navegación
 .navBar {
   background-color: $backgroundLight;
-  display: $displayFlexRowNav;
-  flex-flow: $displayFlexRowNav;
-  justify-content: $displayFlexRowNav;
-  align-items: $displayFlexRowNav;
-  padding: $styleBoxNormal;
-  margin: $styleBoxNormal;
-  position: sticky;
+  display: map-get($map: $displayFlexRowNav, $key: display);
+  flex-flow: map-get($map: $displayFlexRowNav, $key: flex-flow);
+  height: map-get($map: $displayFlexRowNav, $key: height);
+  justify-content: map-get($map: $displayFlexRowNav, $key: justify-content);
+  align-items: map-get($map: $displayFlexRowNav, $key: align-items);
+  padding: 0px 5px 5px 5px;
+  margin: 0px;
+  width: map-get($map: $displayFlexRowNav, $key: width);
+  font-size: map-get($map: $fontSpecial, $key: size);
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  // Imagen de navegación
+  .imageLogo {
+    display: map-get($map: $displayFlexRowNav, $key: display);
+    flex-flow: map-get($map: $displayFlexRowNav, $key: flex-flow);
+    justify-self: start;
+    height: 100%;
+    width: auto;
+  }
+  // Texto de NavBar
+  .navText {
+    display: map-get($map: $displayFlexRowNav, $key: display);
+    flex-flow: map-get($map: $displayFlexRowNav, $key: flex-flow);
+    justify-content: map-get($map: $displayFlexRowNav, $key: justify-content);
+    align-items: map-get($map: $displayFlexRowNav, $key: align-items);
+    padding: map-get($map: $styleBoxNormal, $key: padding);
+    margin: map-get($map: $styleBoxNormal, $key: margin);
+    font-weight: map-get($map: $fontSpecial, $key: weight);
+    color: $scriptColorUsed;
+    height: fit-content;
+    width: fit-content;
+
+    &:hover {
+      color: $scriptColorSpecial;
+    }
+  }
+}
+// Video de presentación
+.videoPresentation {
+  display: map-get($map: $displayFlexRow, $key: display);
+  flex-flow: map-get($map: $displayFlexRow, $key: flex-flow);
+  align-items: map-get($map: $displayFlexRow, $key: align-items);
+  justify-content: map-get($map: $displayFlexRow, $key: justify-content);
+  height: auto;
+  width: 90vw;
+  padding: 70px 0px 0px 0px;
 }
 
-.videoPresentation {
-  display: $displayFlexRow;
-  flex-flow: $displayFlexRow;
-  align-items: $displayFlexRow;
-  justify-content: $displayFlexRow;
+// Contenedor de Presentación
+.sectionWho {
+  padding: 30px;
+  display: map-get($map: $displayFlexColumn, $key: display);
+  flex-flow: map-get($map: $displayFlexColumn, $key: flex-flow);
+  background-color: $backgroundDark;
+  align-content: map-get($map: $displayFlexColumn, $key: align-items);
+  margin: 20px 0 20px 0;
+  // Texto de presentación
+  .presentationText {
+    font-weight: map-get($map: $fontSpecial, $key: weight);
+    font-size: map-get($map: $fontSpecial, $key: size);
+    width: $widthTotal;
+    color: $scriptColorUsed;
+    margin: 10px;
+    text-align: center;
+  }
+}
+
+// Bloque contenerdor de Footer
+.conteinerFooter {
+  background-color: $backgroundLight;
+  color: $scriptColorSpecial;
+  .sectionFooter {
+    display: map-get($map: $displayFlexRow, $key: display);
+    flex-flow: map-get($map: $displayFlexRow, $key: flex-flow);
+    justify-content: space-between;
+    background-color: $backgroundLight;
+    margin: 0px 0px -2px 0px;
+    font-size: $fontSmall;
+  }
+  // Lista de números de telefono
+  .contactList {
+    display: map-get($map: $displayFlexColumn, $key: display);
+    flex-flow: map-get($map: $displayFlexColumn, $key: flex-flow);
+    align-items: map-get($map: $displayFlexColumn, $key: align-items);
+    justify-content: space-between;
+    height: fit-content;
+    width: auto;
+    font-size: $fontSmall;
+    background-color: $backgroundLight;
+  }
+  // Lista de logos de redes
+  .socialList {
+    display: map-get($map: $displayFlexRow, $key: display);
+    flex-flow: map-get($map: $displayFlexRow, $key: flex-flow);
+    align-items: map-get($map: $displayFlexRow, $key: align-items);
+    justify-content: space-around;
+    background-color: $backgroundLight;
+  }
+}
+
+// Style de index 
+.imagePresentation {
+  width: $widthTotal;
   height: auto;
+}
+
+// Imagen de tipos de producto 
+.productImg {
+  width: $widthTotal;
+  height: 350px;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+
+.sectionProductsExclusive {
+  padding: map-get($map:$styleBoxNormal , $key:padding);
+  margin: 0px 5px 5px 5px;
+  // Texto de título de lista de productos
+  .productTitle {
+    display: map-get($map: $displayFlexRow, $key: display);
+    justify-content: map-get($map: $displayFlexRow, $key: justify-content);
+  }
+  .sectionProducts {
+    padding: map-get($map:$styleBoxNormal , $key:padding);
+    margin: map-get($map:$styleBoxNormal , $key:margin );
+  }
+  .card {
+    background-color: $backgroundDark;
+  }
+}
+.sectionProducts{
+  @extend .sectionProductsExclusive;
+  // Texto de título de lista de productos
+//   .productTitle {
+  
+//     display: map-get($map: $displayFlexRow, $key: display);
+//     justify-content: map-get($map: $displayFlexRow, $key: justify-content);
+//   }
+//   .sectionProducts {
+//     padding: map-get($map:$styleBoxNormal , $key:padding);
+//     margin: map-get($map:$styleBoxNormal , $key:margin );
+//   }
+//   .card {
+//     background-color: $backgroundDark;
+//   }
+}
+
+/* Texto de título de secciones*/
+.sectionTitle {
+  font-weight: map-get($map: $fontSpecial, $key: weight);
+  font-size: map-get($map: $fontSpecial, $key: size);
+  display: map-get($map: $displayFlexRow, $key: display);
+  flex-flow: map-get($map: $displayFlexRow, $key: flex-flow);
+  justify-content: map-get($map: $displayFlexRow, $key: justify-content);
+  background-color: $backgroundLight;
+  color: $scriptColorSpecial;
+  height: 50px;
+  align-content: map-get($map: $displayFlexRow, $key: align-items);
+  width: 30%;
+  margin: map-get($map: $styleBoxNormal, $key: margin);
+  padding: map-get($map: $styleBoxNormal, $key: padding);
+}
+
+//  Estilo de Página Contactos 
+.conteinerContact {
+  display: map-get($map: $displayFlexRow, $key: display);
+  background-color: $backgroundDark;
+  color: $scriptColorSpecial;
+  align-items: map-get($map: $displayFlexRow, $key: align-items);
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 100px 5px 100px 5px;
+  border: 1px;
+}
+/* Bloque contenedor de sección de Ubicación */
+.sectionLocation {
+  display: map-get($map: $displayFlexRow, $key: display);
+  width: $widthTotal;
+  justify-content: map-get($map: $displayFlexRow, $key: justify-content);
+  align-content: map-get($map: $displayFlexRow, $key: align-items);
+  background-color: $backgroundDark;
+  padding: 20px 0px 20px 0px;
+  margin: 0 0 20px 0;
+}
+
+
+
+// Media queries
+@mixin bp($point) {
+$bp-babybear: "(max-width: 576px)";
+$bp-mamabear: "(max-width: 768px)";
+$bp-papabear: "(min-width: 992px)";
+  @if $point == papa-bear {
+     @media #{$bp-papabear} { 
+      .navBar {
+        font-size: map-get($map: $fontSpecial, $key: size);
+      }
+      .imageLogo {
+        height: 100%;
+      }
+      .contactList {
+        font-size: $fontSmall;
+      }
+      .sectionFooter {
+        font-size: $fontSmall;
+      } }
+   }
+  // @else if $point == mama-bear {
+  //   @media #{$bp-mamabear} { @content; }
+  // }
+  @if $point == baby-bear {
+    @media only screen and ($bp-babybear) {
+      .navBar {
+        font-size: map-get($map: $fontSpecialSmall, $key: size);
+      }
+      .imageLogo {
+        height: 50%;
+      }
+      .contactList {
+        font-size: $fontSmaller;
+      }
+      .sectionFooter {
+        font-size: $fontSmaller;
+      }
+    }
+  }
 }
