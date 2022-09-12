@@ -33,18 +33,18 @@
           /></a>
         </div>
         <div class="navText">
-          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-          <a class="nav-link" href="./Quienes_somos.html">¿Quienes somos?</a>
-          <a class="nav-link" href="./Productos.html">Productos</a>
-          <a class="nav-link" href="./Contactos.html">Contactos</a>
-          <a class="nav-link" href="./Ubicación.html">Ubicación</a>
+          <a class="nav-link navText" aria-current="page" href="./index.html">Home</a>
+          <a class="nav-link navText" href="./Quienes_somos.html">¿Quienes somos?</a>
+          <a class="nav-link navText" href="./Productos.html">Productos</a>
+          <a class="nav-link navText" href="./Contactos.html">Contactos</a>
+          <a class="nav-link navText" href="./Ubicación.html">Ubicación</a>
         </div>
       </nav>
     </header>
     <main>
       <!-- Contactos con el negocio -->
       <h2 class="sectionTitle">Contactos</h2>
-      <conteiner class="conteinerContact">
+      <form class="conteinerContact">
         <!-- Textfields de contacto -->
         <div class="mb-3 row-cols-md-1">
           <label for="exampleFormControlInput1" class="form-label"
@@ -62,7 +62,7 @@
             >Correo electrónico</label
           >
           <input
-            type="number"
+            type="email"
             class="form-control"
             id="exampleFormControlInput1"
             placeholder="name@example.com"
@@ -73,7 +73,7 @@
             >Telefono</label
           >
           <input
-            type="email"
+            type="number"
             class="form-control"
             id="exampleFormControlInput1"
             placeholder="35125941112"
@@ -89,7 +89,15 @@
             rows="3"
           ></textarea>
         </div>
-      </conteiner>
+        <div class="row">
+          <div class="mb-3 row-cols-md-1 ">
+            <button type="submit" class="btn btn-primary buttonSubmitForm">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+
       <!-- Footer -->
       <footer>
         <conteiner class="conteinerFooter">

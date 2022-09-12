@@ -3,10 +3,9 @@ $backgroundDark: #ffc176;
 $backgroundLight: #ffe9b3;
 $scriptColorSpecial: #930500;
 $scriptColorNormal: black;
-$scriptColorUsed: #930044;
+$scriptColorUsed: #3a0c22;
 
 // Breackpoints media queries
-
 
 // Variables fuentes
 $font: (
@@ -104,12 +103,12 @@ a {
     padding: map-get($map: $styleBoxNormal, $key: padding);
     margin: map-get($map: $styleBoxNormal, $key: margin);
     font-weight: map-get($map: $fontSpecial, $key: weight);
-    color: $scriptColorUsed;
+    color: $scriptColorSpecial;
     height: fit-content;
     width: fit-content;
 
     &:hover {
-      color: $scriptColorSpecial;
+      color: $scriptColorUsed;
     }
   }
 }
@@ -176,13 +175,13 @@ a {
   }
 }
 
-// Style de index 
+// Style de index
 .imagePresentation {
   width: $widthTotal;
   height: auto;
 }
 
-// Imagen de tipos de producto 
+// Imagen de tipos de producto
 .productImg {
   width: $widthTotal;
   height: 350px;
@@ -192,9 +191,8 @@ a {
   }
 }
 
-
 .sectionProductsExclusive {
-  padding: map-get($map:$styleBoxNormal , $key:padding);
+  padding: map-get($map: $styleBoxNormal, $key: padding);
   margin: 0px 5px 5px 5px;
   // Texto de título de lista de productos
   .productTitle {
@@ -202,28 +200,28 @@ a {
     justify-content: map-get($map: $displayFlexRow, $key: justify-content);
   }
   .sectionProducts {
-    padding: map-get($map:$styleBoxNormal , $key:padding);
-    margin: map-get($map:$styleBoxNormal , $key:margin );
+    padding: map-get($map: $styleBoxNormal, $key: padding);
+    margin: map-get($map: $styleBoxNormal, $key: margin);
   }
   .card {
     background-color: $backgroundDark;
   }
 }
-.sectionProducts{
+.sectionProducts {
   @extend .sectionProductsExclusive;
   // Texto de título de lista de productos
-//   .productTitle {
-  
-//     display: map-get($map: $displayFlexRow, $key: display);
-//     justify-content: map-get($map: $displayFlexRow, $key: justify-content);
-//   }
-//   .sectionProducts {
-//     padding: map-get($map:$styleBoxNormal , $key:padding);
-//     margin: map-get($map:$styleBoxNormal , $key:margin );
-//   }
-//   .card {
-//     background-color: $backgroundDark;
-//   }
+  //   .productTitle {
+
+  //     display: map-get($map: $displayFlexRow, $key: display);
+  //     justify-content: map-get($map: $displayFlexRow, $key: justify-content);
+  //   }
+  //   .sectionProducts {
+  //     padding: map-get($map:$styleBoxNormal , $key:padding);
+  //     margin: map-get($map:$styleBoxNormal , $key:margin );
+  //   }
+  //   .card {
+  //     background-color: $backgroundDark;
+  //   }
 }
 
 /* Texto de título de secciones*/
@@ -242,16 +240,22 @@ a {
   padding: map-get($map: $styleBoxNormal, $key: padding);
 }
 
-//  Estilo de Página Contactos 
+//  Estilo de Página Contactos
 .conteinerContact {
   display: map-get($map: $displayFlexRow, $key: display);
   background-color: $backgroundDark;
+  flex-flow: row wrap;
   color: $scriptColorSpecial;
   align-items: map-get($map: $displayFlexRow, $key: align-items);
   justify-content: space-evenly;
   padding: 10px;
   margin: 100px 5px 100px 5px;
   border: 1px;
+  .buttonSubmitForm {
+    background-color: $backgroundLight;
+    color: $scriptColorSpecial;
+    border: 0cm;
+  }
 }
 /* Bloque contenedor de sección de Ubicación */
 .sectionLocation {
@@ -264,15 +268,13 @@ a {
   margin: 0 0 20px 0;
 }
 
-
-
 // Media queries
 @mixin bp($point) {
-$bp-babybear: "(max-width: 576px)";
-$bp-mamabear: "(max-width: 768px)";
-$bp-papabear: "(min-width: 992px)";
+  $bp-babybear: "(max-width: 576px)";
+  $bp-mamabear: "(max-width: 768px)";
+  $bp-papabear: "(min-width: 992px)";
   @if $point == papa-bear {
-     @media #{$bp-papabear} { 
+    @media #{$bp-papabear} {
       .navBar {
         font-size: map-get($map: $fontSpecial, $key: size);
       }
@@ -284,8 +286,9 @@ $bp-papabear: "(min-width: 992px)";
       }
       .sectionFooter {
         font-size: $fontSmall;
-      } }
-   }
+      }
+    }
+  }
   // @else if $point == mama-bear {
   //   @media #{$bp-mamabear} { @content; }
   // }
