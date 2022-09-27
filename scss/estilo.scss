@@ -79,20 +79,26 @@ a {
   height: map-get($map: $displayFlexRowNav, $key: height);
   justify-content: map-get($map: $displayFlexRowNav, $key: justify-content);
   align-items: map-get($map: $displayFlexRowNav, $key: align-items);
-  padding: 0px 5px 5px 5px;
   margin: 0px;
-  width: map-get($map: $displayFlexRowNav, $key: width);
   font-size: map-get($map: $fontSpecial, $key: size);
   width: 100vw;
   position: fixed;
   z-index: 1;
+
   // Imagen de navegación
   .imageLogo {
     display: map-get($map: $displayFlexRowNav, $key: display);
     flex-flow: map-get($map: $displayFlexRowNav, $key: flex-flow);
     justify-self: start;
-    height: 100%;
+    margin: 0px;
+    padding: 15px 0px 0px 0px;
+    height: 50px;
     width: auto;
+    align-content: center;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.5, 1.5);
+    }
   }
   // Texto de NavBar
   .navText {
@@ -141,11 +147,19 @@ a {
     text-align: center;
   }
 }
-
+.imageBienvenidos {
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 50vw;
+  margin: -350px 0px 100px 0px;
+}
 // Bloque contenerdor de Footer
 .conteinerFooter {
   background-color: $backgroundLight;
   color: $scriptColorSpecial;
+  height: auto;
+  width: 100vw;
   .sectionFooter {
     display: map-get($map: $displayFlexRow, $key: display);
     flex-flow: map-get($map: $displayFlexRow, $key: flex-flow);
@@ -153,6 +167,7 @@ a {
     background-color: $backgroundLight;
     margin: 0px 0px -2px 0px;
     font-size: $fontSmall;
+    padding: 5px 0px 0px 0px;
   }
   // Lista de números de telefono
   .contactList {
@@ -164,6 +179,7 @@ a {
     width: auto;
     font-size: $fontSmall;
     background-color: $backgroundLight;
+    padding: 15px;
   }
   // Lista de logos de redes
   .socialList {
@@ -206,22 +222,14 @@ a {
   .card {
     background-color: $backgroundDark;
   }
+  .productList {
+    margin: 0px;
+    padding: 0px;
+  }
 }
 .sectionProducts {
-  @extend .sectionProductsExclusive;
   // Texto de título de lista de productos
-  //   .productTitle {
-
-  //     display: map-get($map: $displayFlexRow, $key: display);
-  //     justify-content: map-get($map: $displayFlexRow, $key: justify-content);
-  //   }
-  //   .sectionProducts {
-  //     padding: map-get($map:$styleBoxNormal , $key:padding);
-  //     margin: map-get($map:$styleBoxNormal , $key:margin );
-  //   }
-  //   .card {
-  //     background-color: $backgroundDark;
-  //   }
+  @extend .sectionProductsExclusive;
 }
 
 /* Texto de título de secciones*/
